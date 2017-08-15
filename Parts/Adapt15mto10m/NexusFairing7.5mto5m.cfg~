@@ -1,0 +1,77 @@
+PART
+{
+// this is a sample config file, for determining a good file format for defining part parameters
+// comment line - ignored by cfg parser
+// empty lines, or lines without a '=' sign are also ignored
+// all other lines are split at the '=' sign, and the left operand is used to know what parameter we are setting
+// diferent parameters require data in different formats (see docs), and each module has it's own parameters (again, see docs)
+// each assignment must be in a single line. Lines without assignments will be ignored. (You CAN turn on word wrap, though)
+// each keyword here relates to an existing variable in the assigned module. If the keyword isn't found, it is ignored.
+// conversely, if a keyword is left unassigned (as in not in the file), it will be initialized with it's default value
+// This is done automatically, so any public variable defined in the loaded module can be accessed this way (provided it's value can be parsed)
+
+
+// --- general parameters ---
+name = NexusAdapter7.5to5m
+module = Part
+author = TD
+
+// --- asset parameters ---
+mesh = NewModel.mu
+scale = 1
+rescaleFactor = 0.5
+
+
+// --- node definitions ---
+// definition format is Position X, Position Y, Position Z, Up X, Up Y, Up Z
+node_stack_bottom = 0.0, -2.66287, 0.0, 0.0, -1.0, 0.0, 10
+node_stack_top = 0.0, 2.89819, 0.0, 0.0, 1.0, 0.0, 3
+//27.949
+// --- FX definitions ---
+
+fx_gasBurst_white = 0.0, 0.0650517, 0.0, 0.0, 1.0, 0.0, decouple
+sound_vent_large = decouple
+	fx_exhaustFlame_yellow = 0.0, -3.5, 0.0, 0.0, 1.0, 0.0, running
+	fx_exhaustSparks_yellow = 0.0, -3.5, 0.0, 0.0, 1.0, 0.0, running
+	fx_smokeTrail_medium = 0.0, -4, 0.0, 0.0, 1.0, 0.0, running
+	sound_vent_medium = engage
+	sound_rocket_hard = running
+	sound_vent_soft = disengage
+	sound_explosion_low = flameout
+
+// --- editor parameters ---
+TechRequired = advMetalworks
+entryCost = 7200
+cost = 600
+category = Structural
+subcategory = 0
+title = 7.5m to 5m Stack Separator
+manufacturer = O.M.B. Demolition Enterprises
+description = Unlike Decouplers, Separators jettison everything attached to them. This new technology was very well received by rocket engineers everywhere. Not bad for something that started out as a failure for a controlled explosive bolt prototype.
+
+// attachment rules: stack, srfAttach, allowStack, allowSrfAttach, allowCollision
+attachRules = 1,0,1,1,0
+
+// --- standard part parameters ---
+mass = 0.45
+dragModelType = default
+maximum_drag = 0.2
+minimum_drag = 0.2
+angularDrag = 2
+crashTolerance = 9
+maxTemp = 3400
+fuelCrossFeed = False
+	stagingIcon = SOLID_BOOSTER
+	
+stageOffset = 1
+childStageOffset = 1
+
+
+// ----- DO NOT EDIT BELOW THIS POINT ------
+MODULE
+{
+    name = ModuleDecouple
+    ejectionForce = 20
+}
+
+}

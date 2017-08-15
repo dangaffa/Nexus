@@ -1,0 +1,67 @@
+PART
+{
+
+// Kerbal Space Program - Part Config
+// Orion 10m Booster Fuel tank
+// 
+
+// --- general parameters ---
+name = OB_10m_Fuel
+module = Part
+author = TD
+
+// --- asset parameters ---
+mesh = model.mu
+scale = 1
+rescaleFactor = 1.0
+
+
+// --- node definitions ---
+node_stack_top = 0.0, 3, 0.0, 0.0, 1.0, 0.0, 3
+node_stack_bottom = 0.0, -3.0, 0.0, 0.0, 1.0, 0.0, 3
+node_stack_bottom = 3.0, -3.0, 0.0, 0.0, 1.0, 0.0, 3
+node_stack_bottom = 0.0, -3.0, 3.0, 0.0, 1.0, 0.0, 3
+node_stack_bottom = -3.0, -3.0, 0.0, 0.0, 1.0, 0.0, 3
+node_stack_bottom = 0.0, -3.0, -3.0, 0.0, 1.0, 0.0, 3
+
+
+
+// --- editor parameters ---
+TechRequired = start
+entryCost = 0
+cost = 800
+category = Propulsion
+subcategory = 0
+title = Orion 10m Booster Fule Tank
+manufacturer = TD Industries
+description = A short tank from the HH series of liquid fuel tanks.
+
+// attachment rules: stack, srfAttach, allowStack, allowSrfAttach, allowCollision
+attachRules = 1,0,1,1,0
+
+// --- standard part parameters ---
+mass = 160
+dragModelType = default
+maximum_drag = 0.2
+minimum_drag = 0.3
+angularDrag = 2
+crashTolerance = 160
+breakingForce = 19000
+breakingTorque = 19000
+maxTemp = 3500.0
+
+RESOURCE
+{
+ name = LiquidFuel
+ amount = 11422
+ maxAmount = 11422
+}
+
+RESOURCE
+{
+ name = Oxidizer
+ amount = 14013
+ maxAmount = 14013
+}
+
+}

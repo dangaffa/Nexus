@@ -1,0 +1,1187 @@
+@PART[Nexus2RCS]:NEEDS[RealismOverhaul]
+{
+ @description = Rockets to add a triffling two million pounds of thrust.  These LOX + LH rocket clusters are basically a twelve-pack of Rocketdyne J-2X rockets that are for placing in a pattern around the Nexus on the underside of the toroidal Oxygen tank.  While they don't have brilliant Isp at low altitude, they do provide quite a bit of extra thrust, and by using throttle adjustments, provide control as they are some distance from the centre-line.  Best used with symmetry, typically by-four, although using more could be useful for larger payloads.  About 10% of their thrust is set aside as RCS.
+ @mass = 12.64
+ @maxTemp = 1821
+ RescaleFactor = 2.0
+ @MODULE[ModuleEngine*]
+ {
+  @maxThrust = 218972.8
+  @heatProduction = 101
+  @atmosphereCurve
+  {
+   @key,0 = 0 217
+   @key,1 = 1 196
+  }
+  !PROPELLANT,* {}
+  PROPELLANT
+  {
+   name = LqdHydrogen
+   ratio = 94.590172
+   DrawGauge = True
+  }
+  PROPELLANT
+  {
+   name = LqdOxygen
+   ratio = 5.40982800000001
+  }
+ }
+
+ @MODULE[ModuleGimbal]
+ {
+  %gimbalRange = 0
+  %gimbalResponseSpeed = 7.47473603510776
+  %useGimbalResponseSpeed = true
+ }
+ !MODULE[ModuleEngineConfigs] {}
+ MODULE
+ {
+  name = ModuleEngineConfigs
+  techLevel = 3
+  origTechLevel = 3
+  engineType = L
+  origMass = 12.64
+  configuration = LqdHydrogen+LqdOxygen
+  modded = false
+  CONFIG
+  {
+   name = LqdHydrogen+LqdOxygen
+   maxThrust = 218972.8
+   heatProduction = 101
+   PROPELLANT
+   {
+    name = LqdHydrogen
+    ratio = 0.94590172
+    DrawGauge = True
+   }
+   PROPELLANT
+   {
+    name = LqdOxygen
+    ratio = 0.0540982800000001
+   }
+   IspSL = 0.701041
+   IspV = 0.701041
+   throttle = 0.3
+   ModuleEngineIgnitor
+   {
+    name = ModuleEngineIgnitor
+    ignitionsAvailable = 5
+    autoIgnitionTemperature = 800
+    ignitorType = Electric
+    useUllageSimulation = true
+    IGNITOR_RESOURCE
+    {
+     name = ElectricCharge
+     amount = 267.04
+    }
+   }
+  }
+  CONFIG
+  {
+   name = LqdHydrogen+LqdOxygen
+   maxThrust = 218972.8
+   heatProduction = 101
+   PROPELLANT
+   {
+    name = LqdHydrogen
+    ratio = 0.93577694
+    DrawGauge = True
+   }
+   PROPELLANT
+   {
+    name = LqdOxygen
+    ratio = 0.06422306
+   }
+   IspSL = 0.701041
+   IspV = 0.701041
+   throttle = 0.3
+   ModuleEngineIgnitor
+   {
+    name = ModuleEngineIgnitor
+    ignitionsAvailable = 5
+    autoIgnitionTemperature = 800
+    ignitorType = Electric
+    useUllageSimulation = true
+    IGNITOR_RESOURCE
+    {
+     name = ElectricCharge
+     amount = 267.04
+    }
+   }
+  }
+ }
+ !MODULE[ModuleEngineIgnitor] {}
+ %category = Propulsion
+ MODULE
+ {
+  name = ModuleEngineIgnitor
+  ignitionsAvailable = 5
+  autoIgnitionTemperature = 800
+  ignitorType = Electric
+  useUllageSimulation = true
+  IGNITOR_RESOURCE
+  {
+   name = ElectricCharge
+   amount = 267.04
+  }
+ }
+}
+
+
+@PART[NexusRCShalfy]:NEEDS[RealismOverhaul]
+{
+ @description = Rockets to add a triffling million pounds of thrust.  These LOX + LH rocket clusters are basically a six-pack of Rocketdyne J-2X rockets that are for placing in a pattern around the Nexus on the underside of the toroidal Oxygen tank.  While they don't have brilliant Isp at low altitude, they do provide quite a bit of extra thrust, and by using throttle adjustments, provide control as they are some distance from the centre-line.  Best used with symmetry, typically by-four, although using more could be useful for larger payloads.  About 10% of their thrust is set aside as RCS.
+ @mass = 6.32
+ @maxTemp = 1821
+ RescaleFactor = 2.0
+ @MODULE[ModuleEngine*]
+ {
+  @maxThrust = 109486.4
+  @heatProduction = 101
+  @atmosphereCurve
+  {
+   @key,0 = 0 217
+   @key,1 = 1 196
+  }
+  !PROPELLANT,* {}
+  PROPELLANT
+  {
+   name = LqdHydrogen
+   ratio = 94.590172
+   DrawGauge = True
+  }
+  PROPELLANT
+  {
+   name = LqdOxygen
+   ratio = 5.40982800000001
+  }
+ }
+
+ @MODULE[ModuleGimbal]
+ {
+  %gimbalRange = 0
+  %gimbalResponseSpeed = 9.20247951085084
+  %useGimbalResponseSpeed = true
+ }
+ !MODULE[ModuleEngineConfigs] {}
+ MODULE
+ {
+  name = ModuleEngineConfigs
+  techLevel = 3
+  origTechLevel = 3
+  engineType = L
+  origMass = 6.32
+  configuration = LqdHydrogen+LqdOxygen
+  modded = false
+  CONFIG
+  {
+   name = LqdHydrogen+LqdOxygen
+   maxThrust = 109486.4
+   heatProduction = 101
+   PROPELLANT
+   {
+    name = LqdHydrogen
+    ratio = 0.94590172
+    DrawGauge = True
+   }
+   PROPELLANT
+   {
+    name = LqdOxygen
+    ratio = 0.0540982800000001
+   }
+   IspSL = 0.701041
+   IspV = 0.701041
+   throttle = 0.3
+   ModuleEngineIgnitor
+   {
+    name = ModuleEngineIgnitor
+    ignitionsAvailable = 5
+    autoIgnitionTemperature = 800
+    ignitorType = Electric
+    useUllageSimulation = true
+    IGNITOR_RESOURCE
+    {
+     name = ElectricCharge
+     amount = 133.52
+    }
+   }
+  }
+  CONFIG
+  {
+   name = LqdHydrogen+LqdOxygen
+   maxThrust = 109486.4
+   heatProduction = 101
+   PROPELLANT
+   {
+    name = LqdHydrogen
+    ratio = 0.93577694
+    DrawGauge = True
+   }
+   PROPELLANT
+   {
+    name = LqdOxygen
+    ratio = 0.06422306
+   }
+   IspSL = 0.701041
+   IspV = 0.701041
+   throttle = 0.3
+   ModuleEngineIgnitor
+   {
+    name = ModuleEngineIgnitor
+    ignitionsAvailable = 5
+    autoIgnitionTemperature = 800
+    ignitorType = Electric
+    useUllageSimulation = true
+    IGNITOR_RESOURCE
+    {
+     name = ElectricCharge
+     amount = 133.52
+    }
+   }
+  }
+ }
+ !MODULE[ModuleEngineIgnitor] {}
+ %category = Propulsion
+ MODULE
+ {
+  name = ModuleEngineIgnitor
+  ignitionsAvailable = 5
+  autoIgnitionTemperature = 800
+  ignitorType = Electric
+  useUllageSimulation = true
+  IGNITOR_RESOURCE
+  {
+   name = ElectricCharge
+   amount = 133.52
+  }
+ }
+}
+
+
+@PART[Nexus50EnginePlug]:NEEDS[RealismOverhaul]
+{
+ @description = The core of the Nexus booster in standard layout is this massive truncated aerospike rocket.  60 rocket nozzles around a hollow truncated aerospike provide not only massive thrust at all altitudes, but good Isp across all altitudes.  Having LH2+LOX engines is critical to improve Isp, and no other chemical rocket solution would be capable of providing a SSTO booster without significant technical or environmental consequences.
+ @mass = 134.4
+ @maxTemp = 1906
+ rescaleFactor = 1.0
+ @MODULE[ModuleEngine*]
+ {
+  @maxThrust = 160200
+  @heatProduction = 106
+  @atmosphereCurve
+  {
+   @key,0 = 0 238
+   @key,1 = 1 214
+  }
+  !PROPELLANT,* {}
+  PROPELLANT
+  {
+   name = LqdHydrogen
+   ratio = 94.590172
+   DrawGauge = True
+  }
+  PROPELLANT
+  {
+   name = LqdOxygen
+   ratio = 5.40982800000001
+  }
+ }
+
+ @MODULE[ModuleGimbal]
+ {
+  %gimbalRange = 3
+  %gimbalResponseSpeed = 3.67790241524117
+  %useGimbalResponseSpeed = true
+ }
+ !MODULE[ModuleEngineConfigs] {}
+ MODULE
+ {
+  name = ModuleEngineConfigs
+  techLevel = 4
+  origTechLevel = 4
+  engineType = A
+  origMass = 134.4
+  configuration = LqdHydrogen+LqdOxygen
+  modded = false
+  CONFIG
+  {
+   name = LqdHydrogen+LqdOxygen
+   maxThrust = 160200
+   heatProduction = 106
+   PROPELLANT
+   {
+    name = LqdHydrogen
+    ratio = 0.94590172
+    DrawGauge = True
+   }
+   PROPELLANT
+   {
+    name = LqdOxygen
+    ratio = 0.0540982800000001
+   }
+   IspSL = 0.701041
+   IspV = 0.701041
+   throttle = 0.7
+   ModuleEngineIgnitor
+   {
+    name = ModuleEngineIgnitor
+    ignitionsAvailable = 3
+    autoIgnitionTemperature = 800
+    ignitorType = Electric
+    useUllageSimulation = true
+    IGNITOR_RESOURCE
+    {
+     name = ElectricCharge
+     amount = 1602
+    }
+   }
+  }
+  CONFIG
+  {
+   name = LqdHydrogen+LqdOxygen
+   maxThrust = 160200
+   heatProduction = 106
+   PROPELLANT
+   {
+    name = LqdHydrogen
+    ratio = 0.93577694
+    DrawGauge = True
+   }
+   PROPELLANT
+   {
+    name = LqdOxygen
+    ratio = 0.06422306
+   }
+   IspSL = 0.701041
+   IspV = 0.701041
+   throttle = 0.7
+   ModuleEngineIgnitor
+   {
+    name = ModuleEngineIgnitor
+    ignitionsAvailable = 3
+    autoIgnitionTemperature = 800
+    ignitorType = Electric
+    useUllageSimulation = true
+    IGNITOR_RESOURCE
+    {
+     name = ElectricCharge
+     amount = 1602
+    }
+   }
+  }
+ }
+ !MODULE[ModuleEngineIgnitor] {}
+ %category = Propulsion
+ MODULE
+ {
+  name = ModuleEngineIgnitor
+  ignitionsAvailable = 3
+  autoIgnitionTemperature = 800
+  ignitorType = Electric
+  useUllageSimulation = true
+  IGNITOR_RESOURCE
+  {
+   name = ElectricCharge
+   amount = 1602
+  }
+ }
+}
+
+@PART[Nexus63EnginePlug] //\:Final //Nexus-2 Plug Aero Spike Engine
+{
+ @description = The core of the Nexus booster in standard layout is this massive truncated aerospike rocket.  60 rocket nozzles around a hollow truncated aerospike provide not only massive thrust at all altitudes, but good Isp across all altitudes.  Having LH2+LOX engines is critical to improve Isp, and no other chemical rocket solution would be capable of providing a SSTO booster without significant technical or environmental consequences.
+ @mass = 268.8
+ @maxTemp = 1906
+ RescaleFactor = 1.26
+ @MODULE[ModuleEngine*]
+ {
+  @maxThrust = 320400
+  @heatProduction = 106
+  @atmosphereCurve
+  {
+   @key,0 = 0 238
+   @key,1 = 1 214
+  }
+  !PROPELLANT,* {}
+  PROPELLANT
+  {
+   name = LqdHydrogen
+   ratio = 94.590172
+   DrawGauge = True
+  }
+  PROPELLANT
+  {
+   name = LqdOxygen
+   ratio = 5.40982800000001
+  }
+ }
+
+ @MODULE[ModuleGimbal]
+ {
+  %gimbalRange = 3
+  %gimbalResponseSpeed = 2.98738505034403
+  %useGimbalResponseSpeed = true
+ }
+ !MODULE[ModuleEngineConfigs] {}
+ MODULE
+ {
+  name = ModuleEngineConfigs
+  techLevel = 4
+  origTechLevel = 4
+  engineType = A
+  origMass = 268.8
+  configuration = LqdHydrogen+LqdOxygen
+  modded = false
+  CONFIG
+  {
+   name = LqdHydrogen+LqdOxygen
+   maxThrust = 320400
+   heatProduction = 106
+   PROPELLANT
+   {
+    name = LqdHydrogen
+    ratio = 0.94590172
+    DrawGauge = True
+   }
+   PROPELLANT
+   {
+    name = LqdOxygen
+    ratio = 0.0540982800000001
+   }
+   IspSL = 0.701041
+   IspV = 0.701041
+   throttle = 0.7
+   ModuleEngineIgnitor
+   {
+    name = ModuleEngineIgnitor
+    ignitionsAvailable = 3
+    autoIgnitionTemperature = 800
+    ignitorType = Electric
+    useUllageSimulation = true
+    IGNITOR_RESOURCE
+    {
+     name = ElectricCharge
+     amount = 3204
+    }
+   }
+  }
+  CONFIG
+  {
+   name = LqdHydrogen+LqdOxygen
+   maxThrust = 320400
+   heatProduction = 106
+   PROPELLANT
+   {
+    name = LqdHydrogen
+    ratio = 0.93577694
+    DrawGauge = True
+   }
+   PROPELLANT
+   {
+    name = LqdOxygen
+    ratio = 0.06422306
+   }
+   IspSL = 0.701041
+   IspV = 0.701041
+   throttle = 0.7
+   ModuleEngineIgnitor
+   {
+    name = ModuleEngineIgnitor
+    ignitionsAvailable = 3
+    autoIgnitionTemperature = 800
+    ignitorType = Electric
+    useUllageSimulation = true
+    IGNITOR_RESOURCE
+    {
+     name = ElectricCharge
+     amount = 3204
+    }
+   }
+  }
+ }
+ !MODULE[ModuleEngineIgnitor] {}
+ %category = Propulsion
+ MODULE
+ {
+  name = ModuleEngineIgnitor
+  ignitionsAvailable = 3
+  autoIgnitionTemperature = 800
+  ignitorType = Electric
+  useUllageSimulation = true
+  IGNITOR_RESOURCE
+  {
+   name = ElectricCharge
+   amount = 3204
+  }
+ }
+}
+
+
+
+@PART[N70flandingLegM2]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 28
+}
+@PART[NexusDec70f]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 8.8
+	@MODULE[ModuleDecouple]
+	{
+	   @ejectionForce = 2840
+	}
+}
+@PART[LF70DualPlate]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 120
+}
+@PART[LF70SinglePlate]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 56
+}
+@PART[NSS70fO2Shrt]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 67.92
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 2707280
+      type = Structural
+      basemass = -1
+   }
+}
+@PART[NSS70fH2Shrt]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 67.92
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 2707280
+      type = Structural
+      basemass = -1
+   }
+}
+@PART[NSS70fO2XtraShrt]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 19.92
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 713960
+      type = Structural
+      basemass = -1
+   }
+}
+@PART[NSS70fH2XtraShrt]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 19.92
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 713960
+      type = Structural
+      basemass = -1
+   }
+}
+@PART[LF70f]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 139.12
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 16030280
+      type = Structural
+      basemass = -1
+   }
+}
+@PART[LF70f-B]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 69.76
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 9388240
+      type = Structural
+      basemass = -1
+   }
+}
+@PART[NexusDec150f]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 8.8
+	@MODULE[ModuleDecouple]
+	{
+	   @ejectionForce = 2480
+	}
+}
+@PART[NexusDec190f]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1.26
+   @mass = 15.2
+	@MODULE[ModuleDecouple]
+	{
+	   @ejectionForce = 3360
+	}
+}
+@PART[NexusDec75f60f]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 8.8
+	@MODULE[ModuleDecouple]
+	{
+	   @ejectionForce = 6680
+	}
+}
+@PART[SegmentedLF120f]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 240
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 35509360
+      type = Structural
+      basemass = -1
+   }
+}
+@PART[NexusAdapter5mtosize3]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 2
+	@MODULE[ModuleDecouple]
+	{
+	   @ejectionForce = 960
+	}
+}
+@PART[NexusAdapter7.5to5m]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 3.6
+	@MODULE[ModuleDecouple]
+	{
+	   @ejectionForce = 1760
+	}
+}
+@PART[NexusAdapter7.5m]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 6
+	@MODULE[ModuleDecouple]
+	{
+	   @ejectionForce = 2240
+	}
+}
+@PART[NexusAdapter10mO]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 6
+	@MODULE[ModuleDecouple]
+	{
+	   @ejectionForce = 70400
+	}
+}
+@PART[NexusL3ExpansionDeflection]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 26.4
+}
+@PART[NexusSeparator]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 6
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 104000
+      type = Structural
+      basemass = -1
+   }
+	@MODULE[ModuleDecouple]
+	{
+	   @ejectionForce = 160
+	}
+}
+@PART[Nexus2Separator]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1.26
+   @mass = 12
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 208000
+      type = Structural
+      basemass = -1
+   }
+	@MODULE[ModuleDecouple]
+	{
+	   @ejectionForce = 320
+	}
+}
+@PART[fairingSize9]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 47.6
+}
+@PART[fairingSize14]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 47.6
+}
+@PART[airbrakeNex1]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 5.84
+	@MODULE[ModuleAeroSurface]
+	{
+	   @deflectionLiftCoeff = 140
+	}
+}
+@PART[airbrakeNex2]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1.26
+   @mass = 11.68
+	@MODULE[ModuleAeroSurface]
+	{
+	   @deflectionLiftCoeff = 222.264
+	}
+}
+@PART[RadiatorFrameTop]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 1.6
+}
+@PART[Nexus150fHeatShield]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 29.44
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 28000
+      type = Structural
+      basemass = -1
+   }
+	@RESOURCE[Ablator]
+	{
+	   @amount = 144000
+	   @maxAmount = 144000
+	}
+}
+@PART[Nexus190fHeatShield]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1.26
+   @mass = 58.88
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 56000
+      type = Structural
+      basemass = -1
+   }
+	@RESOURCE[Ablator]
+	{
+	   @amount = 288000
+	   @maxAmount = 288000
+	}
+}
+@PART[NexusEDFrameQaud]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 40
+}
+@PART[NexusEDFrameCircle]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 40
+}
+@PART[fairingSizeNexus]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 47.6
+}
+@PART[fairingNexusX2]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 2
+   @mass = 84
+}
+@PART[RadiatorFrame]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 0.8
+}
+@PART[GCRFoldingRad1]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 54.4
+	@MODULE[ModuleActiveRadiator]
+	{
+		@maxEnergyTransfer = 64000000
+		@RESOURCE[ElectricCharge]
+		{
+		 rate = 128
+		}
+	}
+}
+@PART[GCRFoldingRad2]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 49.2
+	@MODULE[ModuleActiveRadiator]
+	{
+	   @maxEnergyTransfer = 57904760
+	   @RESOURCE[ElectricCharge]
+		{
+			rate = 116
+		}
+	}
+}
+@PART[GCRFoldingRad3]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 44
+@MODULE[ModuleActiveRadiator]
+{
+   @maxEnergyTransfer = 51809520
+   @RESOURCE[ElectricCharge]
+{
+ rate = 104
+}
+}
+}
+@PART[GCRFoldingRad4]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 38.8
+@MODULE[ModuleActiveRadiator]
+{
+   @maxEnergyTransfer = 45714288
+   @RESOURCE[ElectricCharge]
+{
+ rate = 91.2
+}
+}
+}
+@PART[GCRFoldingRad5]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 33.6
+@MODULE[ModuleActiveRadiator]
+{
+   @maxEnergyTransfer = 39619048
+   @RESOURCE[ElectricCharge]
+{
+ rate = 79.2
+}
+}
+}
+@PART[GCRFoldingRad6]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 28.48
+@MODULE[ModuleActiveRadiator]
+{
+   @maxEnergyTransfer = 33523808
+   @RESOURCE[ElectricCharge]
+{
+ rate = 67.2
+}
+}
+}
+@PART[GCRFoldingRad7]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 23.28
+@MODULE[ModuleActiveRadiator]
+{
+   @maxEnergyTransfer = 27428568
+   @RESOURCE[ElectricCharge]
+{
+ rate = 55.2
+}
+}
+}
+@PART[Nexus25mShell]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 4.8
+}
+@PART[Nexus190fShell]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 8
+}
+@PART[NexusFuel63half]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1.26
+   @mass = 683.2
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 58586000
+      type = Structural
+      basemass = -1
+   }
+}
+@PART[NexusFuel50half]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 1
+   @mass = 381.6
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 202809259   \\15337423lOx + 49435028LH = 202,809,259
+      type = Structural
+      basemass = -1
+   }
+}
+@PART[NexusFuel25]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 0.3334
+   @mass = 14.16
+   !RESOURCE[LiquidFuel]
+   {
+   }
+   !RESOURCE[Oxidizer]
+   {
+   }
+   MODULE
+   {
+      name = ModuleFuelTanks
+      volume = 1084920
+      type = Structural
+      basemass = -1
+   }
+}
+@PART[]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 0
+   @mass = 0
+}
+@PART[]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 0
+   @mass = 0
+}
+@PART[]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 0
+   @mass = 0
+}
+@PART[]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 0
+   @mass = 0
+}
+@PART[]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 0
+   @mass = 0
+}
+@PART[]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 0
+   @mass = 0
+}
+@PART[]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 0
+   @mass = 0
+}
+@PART[]:NEEDS[RealismOverhaul]
+{
+   %RSSROConfig = True
+   @manufacturer = Convair Division of General Dynamics
+   @rescaleFactor = 0
+   @mass = 0
+}
