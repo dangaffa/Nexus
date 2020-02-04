@@ -3,9 +3,6 @@ Nexus, v1.1.0
 INSTALLATION
 Unpack to GameData folder of KSP.  Nexus" folder should be a sub-folder of GameData.  It then contains the parts within the Parts folder, and resources/flags etc in the other appropriate folders without interfering with regular KSP bits.
 
-Reflection plugin is released as Public Domain as was the original plugin by Razchek and modified by Starwaster.
-http://forum.kerbalspaceprogram.com/threads/70089-Reflection-Plugin-Continued-0-24-2
-
 Assumes but does not require Community Tech Tree (Creative Commons Attribution-NonCommercial) by Nertea.
 http://forum.kerbalspaceprogram.com/threads/100385-Community-Tech-Tree-2-0-last-updated-03-05-15?p=1546633#post1546633
 
